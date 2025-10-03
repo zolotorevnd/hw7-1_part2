@@ -1,0 +1,12 @@
+- name: change motd
+  hosts: all
+  become: true
+  
+  vars:
+    hello_motd: "Hello! Have a nice day!"
+
+  tasks:
+  - name: "change motd"
+    copy:
+      content: "{{hello_motd}}" 
+      dest: /etc/motd 

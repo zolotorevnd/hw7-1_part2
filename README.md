@@ -14,8 +14,17 @@
     3. Изменить приветствие системы (motd) при входе на любое другое. Пожалуйста, в этом задании используйте переменную для задания приветствия. Переменную можно задавать любым удобным способом.
 
 ### Решение 1
+
 <img src = "img/playbook1.png" width = 100%>
 
+<img src = "img/playbook1_changes.png" width = 100%>
 
+<img src = "img/playbook2.png" width = 100%>
+
+<img src = "img/playbook2_changes.png" width = 100%>
+
+<img src = "img/playbook3.png" width = 100%>
+
+<img src = "img/playbook3_changes.png" width = 100%>
 
 ### Задание 2
