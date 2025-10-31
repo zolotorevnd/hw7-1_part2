@@ -1,17 +1,16 @@
-- name: install and start tun
-  hosts: all
+- name: "install and start tun"
+  hosts: "all"
   become: true
-  
+
   tasks:
-  - name: tuned install
+  - name: "tuned install"
     apt:
       name: tuned
       state: latest
-  
-  - name: start tuned
+
+  - name: "Start tuned"
     systemd:
       name: "tuned"
       enabled: true
       state: started
    
-  

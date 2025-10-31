@@ -28,3 +28,17 @@
 <img src = "img/playbook3_changes.png" width = 100%>
 
 ### Задание 2
+
+### Решение 2
+
+<img src = "img/motd2.png" width = 100%>
+
+### Задание 3
+
+### Решение 3
+
+<img src = "img/zadanie3.png" width = 100%>
+
+<img src = "img/apache1.png" width = 100%>
+
+<img src = "img/apache2.png" width = 100%>

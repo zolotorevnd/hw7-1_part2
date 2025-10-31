@@ -1,0 +1,5 @@
+<b> CHARACTERISTICS </b><br>
+<b>CPU:</b> {{ ansible_facts.processor }}<br>
+<b>RAM:</b> {{ ansible_facts.memtotal_mb }}<br>
+<b>HDD:</b> {{ ansible_facts['devices']['vda']['size'] }}<br>
+<b>IP-ADDRESSES:</b> {{ ansible_host }}

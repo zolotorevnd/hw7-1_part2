@@ -1,15 +1,14 @@
-- name: create directory, download Kafka, unarchive Kafka
+- name: "create directory, download Kafka, unarchive Kafka"
   hosts: all
   tasks:
-  - name: create directory
+  - name: "create directory"
     file:
       path: /tmp/kafka2
       state: directory
       mode: "0755"
-      
-  - name: download Kafka
+
+  - name: "download Kafka"
     unarchive:
       src: https://dlcdn.apache.org/kafka/4.0.0/kafka_2.13-4.0.0.tgz
       dest: /tmp/kafka2
       remote_src: yes
-  

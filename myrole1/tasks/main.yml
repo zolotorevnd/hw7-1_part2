@@ -1,0 +1,23 @@
+---
+# tasks file for myrole1
+- name: "install Apache"
+  apt:
+    name: "apache2"
+    state: latest
+
+- name: "Change index"
+  template:
+    src: index.j2
+    dest: /var/www/html/index.html
+
+- name: "Start apache2"
+  systemd:
+    name: "apache2"
+    enabled: True
+    state: started
+
+- name: "Status 200"
+  ansible.builtin.uri:
+    url: "{{ ip_addr }}"
+  vars:
+    ip_addr: "http://{{ ansible_facts.all_ipv4_addresses [0] }}/"
